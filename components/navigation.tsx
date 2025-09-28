@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import { Menu, X, ArrowRight } from "lucide-react";
@@ -13,7 +14,6 @@ export function Navigation() {
     { name: "Features", href: "#features" },
     { name: "Team", href: "#team" },
     { name: "Vision", href: "#vision" },
-    { name: "Blog", href: "#blog" },
   ];
 
   const primaryCtaClasses =
@@ -23,7 +23,7 @@ export function Navigation() {
     <nav className="fixed top-0 w-full border-b border-white/5 bg-[#0b0b1a]/80 backdrop-blur-xl z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3" aria-label="Koopay home">
             <div className="relative h-9 w-9">
               <Image
                 src="/vector-logo.png"
@@ -35,7 +35,7 @@ export function Navigation() {
               />
             </div>
             <span className="text-lg font-semibold text-zinc-100">Koopay</span>
-          </div>
+          </Link>
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
@@ -51,16 +51,12 @@ export function Navigation() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Button
-              variant="outline"
-              className="text-xs font-semibold uppercase tracking-wide rounded-full border-white/10 text-zinc-200 hover:bg-white/10"
-            >
-              Sign In
-            </Button>
-            <Button className={primaryCtaClasses}>
-              Join Waitlist
-              <ArrowRight className="ml-2 h-4 w-4" />
+          <div className="hidden md:flex items-center">
+            <Button className={primaryCtaClasses} asChild>
+              <a href="#waitlist-beta">
+                Join Waitlist
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </div>
 
@@ -87,16 +83,12 @@ export function Navigation() {
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4 space-y-3">
-                <Button
-                  variant="outline"
-                  className="w-full text-xs font-semibold uppercase tracking-wide rounded-full border-white/10 text-zinc-200 hover:bg-white/10"
-                >
-                  Sign In
-                </Button>
-                <Button className={`${primaryCtaClasses} w-full justify-center`}>
-                  Join Waitlist
-                  <ArrowRight className="ml-2 h-4 w-4" />
+              <div className="pt-4">
+                <Button className={`${primaryCtaClasses} w-full justify-center`} asChild>
+                  <a href="#waitlist-beta">
+                    Join Waitlist
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </div>
             </div>

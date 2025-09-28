@@ -10,7 +10,10 @@ const secondaryButtonClasses =
 
 export function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-[#0f0f22] via-[#12122b] to-[#0f0f22] border-t border-indigo-900/30">
+    <section
+      id="waitlist-beta"
+      className="py-20 bg-gradient-to-r from-[#0f0f22] via-[#12122b] to-[#0f0f22] border-t border-indigo-900/30"
+    >
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="mb-12">
           <h2 className="text-4xl md:text-6xl font-bold text-zinc-50 mb-6 leading-tight">
@@ -50,8 +53,10 @@ export function CTASection() {
               Request Beta Invite
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className={secondaryButtonClasses}>
-              Watch Demo
+            <Button variant="outline" size="lg" className={secondaryButtonClasses} asChild>
+              <a href="/video/pitch-demo.mp4" target="_blank" rel="noopener noreferrer">
+                Watch Demo
+              </a>
             </Button>
           </div>
         </div>

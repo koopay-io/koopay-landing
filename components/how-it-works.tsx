@@ -108,9 +108,14 @@ export function HowItWorksSection() {
               <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-semibold uppercase tracking-wide rounded-full shadow-lg shadow-indigo-900/40 transition-all duration-200 hover:brightness-110">
                 Get Started Today
               </button>
-              <button className="px-8 py-4 border border-indigo-800/40 text-zinc-200 text-sm font-semibold uppercase tracking-wide rounded-full hover:bg-white/5 transition-all duration-200">
+              <a
+                href="/video/pitch-demo.mp4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 border border-indigo-800/40 text-zinc-200 text-sm font-semibold uppercase tracking-wide rounded-full hover:bg-white/5 transition-all duration-200"
+              >
                 Watch Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>
