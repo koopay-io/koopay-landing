@@ -105,7 +105,7 @@ export function SolutionSection() {
                 </div>
               </div>
               <Button className={primaryButtonClasses}>
-                Get Early Access
+                Join the Waitlist
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -119,18 +119,18 @@ export function SolutionSection() {
                 <p className="text-zinc-400">
                   Every contract ships with logs, permissions, and risk controls aligned to fintech standards.
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 gap-4 text-left">
                   <div className="rounded-2xl border border-indigo-900/40 bg-[#181826] p-4">
-                    <div className="text-2xl font-bold text-blue-400">99.9%</div>
-                    <div className="text-xs text-zinc-500">Uptime</div>
+                    <div className="text-xs font-semibold text-blue-300 uppercase tracking-wide">Reliability</div>
+                    <p className="text-[13px] text-zinc-400 mt-2">Redundant infrastructure and audits are in progress for beta launch.</p>
                   </div>
                   <div className="rounded-2xl border border-indigo-900/40 bg-[#181826] p-4">
-                    <div className="text-2xl font-bold text-indigo-300">3%</div>
-                    <div className="text-xs text-zinc-500">Flat Fee</div>
+                    <div className="text-xs font-semibold text-blue-300 uppercase tracking-wide">Pricing</div>
+                    <p className="text-[13px] text-zinc-400 mt-2">Pricing experiments are underway; final fee structure will be shared pre-launch.</p>
                   </div>
                   <div className="rounded-2xl border border-indigo-900/40 bg-[#181826] p-4">
-                    <div className="text-2xl font-bold text-purple-300">24h</div>
-                    <div className="text-xs text-zinc-500">Payout</div>
+                    <div className="text-xs font-semibold text-blue-300 uppercase tracking-wide">Payouts</div>
+                    <p className="text-[13px] text-zinc-400 mt-2">Instant stablecoin payouts are planned; settlement timing will be validated with beta users.</p>
                   </div>
                 </div>
               </div>

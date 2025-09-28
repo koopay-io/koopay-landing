@@ -60,7 +60,7 @@ export function HeroSection() {
                 <h3 className="text-lg font-semibold text-zinc-100 mb-2">
                   Secure • Instant • Transparent
                 </h3>
-                <p className="text-zinc-400">Dashboard preview ships with our beta launch.</p>
+                <p className="text-zinc-400">Dashboard preview will be unveiled alongside our beta launch — join the waitlist for updates.</p>
               </div>
             </div>
           </div>
