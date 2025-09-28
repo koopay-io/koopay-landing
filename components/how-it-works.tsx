@@ -1,112 +1,112 @@
-import React from 'react';
-import { FileText, Shield, CheckCircle, Star } from 'lucide-react';
+import React from "react";
+import { FileText, Shield, CheckCircle, Star } from "lucide-react";
 
 export function HowItWorksSection() {
   const steps = [
     {
-      icon: <FileText className="w-8 h-8 text-blue-600" />,
+      icon: <FileText className="w-8 h-8 text-indigo-300" />,
       title: "Client Posts Job",
-      description: "Client creates a project and deposits funds into smart contract escrow",
-      details: "Funds are locked and secured until work is completed"
+      description:
+        "Clients scope a project, drop funds into escrow, and define milestone gates in minutes.",
+      details: "Funds stay locked on-chain until acceptance.",
     },
     {
-      icon: <Shield className="w-8 h-8 text-purple-600" />,
+      icon: <Shield className="w-8 h-8 text-sky-300" />,
       title: "Freelancer Accepts",
-      description: "Freelancer accepts the project and begins work on defined milestones",
-      details: "Clear milestones and deliverables are set upfront"
+      description:
+        "Verified talent reviews requirements and commits knowing the budget is already secured.",
+      details: "Both parties agree on timeline & deliverables.",
     },
     {
-      icon: <CheckCircle className="w-8 h-8 text-green-600" />,
+      icon: <CheckCircle className="w-8 h-8 text-emerald-300" />,
       title: "Work Delivered",
-      description: "Freelancer completes milestones and submits work for approval",
-      details: "Automatic release when milestones are approved"
+      description:
+        "Milestones clear through Koopay with submission checklists and tamper-proof audit logs.",
+      details: "Approvals trigger automated payouts.",
     },
     {
-      icon: <Star className="w-8 h-8 text-orange-600" />,
+      icon: <Star className="w-8 h-8 text-violet-300" />,
       title: "Payment & Reputation",
-      description: "Funds released instantly, reputation scores updated on-chain",
-      details: "Both parties build verified, portable reputation"
-    }
+      description:
+        "Instant stablecoin payouts land in wallets while both sides earn verifiable reputation badges.",
+      details: "Portable profiles update in real time.",
+    },
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20" id="how-it-works">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Simple Workflow
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
+            Four Steps from Brief to Payout
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Four simple steps to secure, fast, and fair freelance payments
+          <p className="text-xl text-slate-300/80 max-w-3xl mx-auto">
+            Koopay keeps the workflow intuitive while the infrastructure quietly guarantees trust.
           </p>
         </div>
 
-        {/* Desktop Layout */}
         <div className="hidden lg:block">
           <div className="relative">
-            {/* Connection Lines */}
-            <div className="absolute top-24 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-blue-600 via-purple-600 via-green-600 to-orange-600"></div>
+            <div className="absolute top-24 left-1/5 right-1/5 h-0.5 bg-gradient-to-r from-indigo-400 via-sky-400 via-emerald-400 to-violet-400 opacity-60" />
 
             <div className="grid grid-cols-4 gap-8">
               {steps.map((step, index) => (
                 <div key={index} className="text-center relative">
-                  <div className="relative z-10 mb-6">
-                    <div className="w-16 h-16 mx-auto bg-white rounded-full shadow-lg border-4 border-gray-100 flex items-center justify-center mb-4">
+                  <div className="relative z-10 mb-6 flex flex-col items-center">
+                    <div className="w-20 h-20 bg-[#111237]/90 rounded-full shadow-xl shadow-black/20 border border-white/10 flex items-center justify-center mb-4">
                       {step.icon}
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    <div className="absolute -top-2 -right-2 w-10 h-10 bg-gradient-to-br from-indigo-500 to-violet-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       {index + 1}
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-600 mb-2">{step.description}</p>
-                  <p className="text-sm text-gray-500 italic">{step.details}</p>
+                  <h3 className="text-xl font-semibold text-slate-100 mb-3">{step.title}</h3>
+                  <p className="text-slate-300 mb-2 leading-relaxed">{step.description}</p>
+                  <p className="text-sm text-slate-400 italic">{step.details}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Mobile Layout */}
         <div className="lg:hidden">
           <div className="space-y-8">
             {steps.map((step, index) => (
-              <div key={index} className="flex items-start space-x-4">
+              <div key={index} className="flex items-start gap-4">
                 <div className="relative flex-shrink-0">
-                  <div className="w-16 h-16 bg-white rounded-full shadow-lg border-4 border-gray-100 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-[#111237]/90 rounded-full border border-white/10 flex items-center justify-center">
                     {step.icon}
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  <div className="absolute -top-2 -right-2 w-9 h-9 bg-gradient-to-br from-indigo-500 to-violet-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
                     {index + 1}
                   </div>
                   {index < steps.length - 1 && (
-                    <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-0.5 h-8 bg-gradient-to-b from-blue-600 to-purple-600"></div>
+                    <div className="absolute top-16 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-gradient-to-b from-indigo-400 to-violet-400" />
                   )}
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                  <p className="text-gray-600 mb-1">{step.description}</p>
-                  <p className="text-sm text-gray-500 italic">{step.details}</p>
+                  <h3 className="text-xl font-semibold text-slate-100 mb-2">{step.title}</h3>
+                  <p className="text-slate-300 mb-1 leading-relaxed">{step.description}</p>
+                  <p className="text-sm text-slate-400 italic">{step.details}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Ready to Transform Your Freelance Experience?
+          <div className="rounded-3xl border border-indigo-400/20 bg-gradient-to-br from-indigo-600/20 via-[#0c0d25]/90 to-violet-600/20 p-8 md:p-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4">
+              Ready to Ship Confident Projects?
             </h3>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join thousands of freelancers and clients who are already building the future of work with Koopay.
+            <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+              Join builders who already manage escrow, payouts, and trust with Koopay&apos;s unified console.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+              <button className="px-8 py-4 bg-gradient-to-r from-indigo-500 via-violet-500 to-blue-500 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/30 transition-all duration-200 hover:scale-105">
                 Get Started Today
               </button>
-              <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-full hover:border-gray-400 transition-all duration-200">
+              <button className="px-8 py-4 border border-white/20 text-slate-100 font-semibold rounded-full hover:bg-white/10 transition-all duration-200">
                 Watch Demo
               </button>
             </div>
