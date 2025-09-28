@@ -35,13 +35,13 @@ export function CTASection() {
           </div>
 
           <div className="max-w-md mx-auto mb-8">
-            <div className="flex rounded-full bg-[#181826] border border-indigo-900/40 p-2">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0 rounded-2xl sm:rounded-full bg-[#181826] border border-indigo-900/40 p-2">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-transparent text-sm text-zinc-200 placeholder-zinc-500 outline-none"
+                className="flex-1 w-full px-4 py-3 bg-transparent text-sm text-zinc-200 placeholder-zinc-500 outline-none"
               />
-              <Button className="rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:brightness-110 text-white text-xs font-semibold uppercase tracking-wide px-6">
+              <Button className="w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:brightness-110 text-white text-xs font-semibold uppercase tracking-wide px-6">
                 <Mail className="w-4 h-4 mr-2" />
                 Join Waitlist
               </Button>
