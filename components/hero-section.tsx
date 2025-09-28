@@ -10,7 +10,7 @@ const secondaryButtonClasses =
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 pt-24 pb-20">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center px-4 pt-24 pb-20">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-blue-600/15 via-transparent to-transparent blur-3xl" />
         <div className="absolute -right-40 top-20 h-64 w-64 rounded-full bg-indigo-600/20 blur-3xl" />
