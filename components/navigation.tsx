@@ -43,7 +43,7 @@ export function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-zinc-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-zinc-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -81,7 +81,7 @@ export function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-zinc-300 hover:text-white block px-3 py-2 text-base font-medium transition-colors"
+                  className="text-zinc-300 hover:text-white block px-3 py-2 text-base font-medium transition-colors whitespace-nowrap"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
