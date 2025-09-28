@@ -2,32 +2,35 @@ import React from "react";
 import { Shield, Zap, Star, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 
+const primaryButtonClasses =
+  "bg-gradient-to-r from-blue-500 to-indigo-600 hover:brightness-110 text-white px-8 py-3 text-sm font-semibold uppercase tracking-wide rounded-full shadow-lg shadow-indigo-900/40";
+
 export function SolutionSection() {
   const features = [
     {
-      icon: <Shield className="w-12 h-12 text-indigo-300" />,
+      icon: <Shield className="w-12 h-12 text-blue-400" />,
       title: "Smart Escrow",
       description:
-        "Milestone-based smart contracts lock every payment until both sides sign off.",
+        "Milestone-based smart contracts lock funds until both sides sign off on deliverables.",
       benefits: [
         "Escrow created automatically",
-        "Funds visible to both parties",
-        "Disputes resolved on-chain",
+        "Shared balance visibility",
+        "On-chain dispute automation",
       ],
     },
     {
-      icon: <Zap className="w-12 h-12 text-sky-300" />,
+      icon: <Zap className="w-12 h-12 text-indigo-300" />,
       title: "Instant Payouts",
       description:
-        "Stablecoin rails push cleared milestones to wallets in seconds &mdash; no banking delays.",
-      benefits: ["Same-day settlements", "Programmable stablecoins", "No FX headaches"],
+        "Stablecoin rails deliver cleared milestones in seconds &mdash; no banking delays or FX fees.",
+      benefits: ["Same-day settlements", "Programmable stablecoins", "Compliance-ready ledger"],
     },
     {
-      icon: <Star className="w-12 h-12 text-violet-300" />,
+      icon: <Star className="w-12 h-12 text-purple-300" />,
       title: "Portable Reputation",
       description:
-        "Every completed milestone writes verifiable reputation to a portable, permissionless profile.",
-      benefits: ["On-chain proof of work", "Shareable profile links", "Cross-platform trust"],
+        "Every milestone writes verifiable reputation to a portable Koopay profile you own.",
+      benefits: ["On-chain proof of work", "Shareable profile", "Cross-platform trust"],
     },
   ];
 
@@ -35,33 +38,33 @@ export function SolutionSection() {
     <section className="py-20" id="features">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
-            Koopay is an Always-On Trust Engine
+          <h2 className="text-4xl md:text-5xl font-bold text-zinc-50 mb-6">
+            Koopay is the Trust Layer for Freelance Teams
           </h2>
-          <p className="text-xl text-slate-300/80 max-w-3xl mx-auto mb-6">
-            Escrow, instant payouts, and verifiable reputation in one frictionless workflow for modern teams.
+          <p className="text-xl text-zinc-400 max-w-3xl mx-auto mb-6">
+            Escrow, instant payouts, and verifiable reputation converge in one workflow, giving both sides a
+            dashboard-level view of every project.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-400 via-blue-400 to-violet-400 mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full" />
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#111237]/90 p-8 shadow-xl shadow-black/20"
+              className="rounded-3xl border border-indigo-900/40 bg-[#12122b] p-8 shadow-lg shadow-indigo-900/40 transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-transparent to-purple-500/20 opacity-0 transition-opacity duration-300 hover:opacity-100" />
-              <div className="relative text-center flex flex-col items-center gap-6">
-                <div className="w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center">
+              <div className="text-center flex flex-col items-center gap-6">
+                <div className="w-20 h-20 bg-[#181826] rounded-2xl flex items-center justify-center border border-indigo-900/30">
                   {feature.icon}
                 </div>
-                <h3 className="text-2xl font-semibold text-slate-100">{feature.title}</h3>
-                <p className="text-slate-300 leading-relaxed">{feature.description}</p>
-                <div className="w-full border-t border-white/5 pt-6 space-y-3 text-left">
+                <h3 className="text-2xl font-semibold text-zinc-100">{feature.title}</h3>
+                <p className="text-zinc-400 leading-relaxed">{feature.description}</p>
+                <div className="w-full border-t border-indigo-900/30 pt-6 space-y-3 text-left">
                   {feature.benefits.map((benefit, benefitIndex) => (
-                    <div key={benefitIndex} className="flex items-center gap-3 text-sm text-slate-300">
-                      <div className="size-2 rounded-full bg-gradient-to-r from-indigo-400 to-violet-400"></div>
-                      <span>{benefit}</span>
+                    <div key={benefitIndex} className="flex items-center gap-3 text-sm text-zinc-300">
+                      <div className="size-1.5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600" />
+                      <span dangerouslySetInnerHTML={{ __html: benefit }} />
                     </div>
                   ))}
                 </div>
@@ -70,58 +73,64 @@ export function SolutionSection() {
           ))}
         </div>
 
-        <div className="rounded-3xl border border-white/10 bg-[#0c0d25]/80 p-8 md:p-12 shadow-2xl shadow-black/30">
+        <div className="rounded-3xl border border-indigo-900/40 bg-[#101024] p-8 md:p-12 shadow-xl shadow-indigo-900/40">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-slate-100">
-                One Command Center for Fair Freelance Collaborations
+              <h3 className="text-3xl font-semibold text-zinc-100">
+                One Command Center for Secure Collaborations
               </h3>
-              <p className="text-lg text-slate-300 leading-relaxed">
-                Koopay packages the best of Web3 infrastructure without the crypto overwhelm. Spin up verified contracts, automate releases, and keep every stakeholder informed.
+              <p className="text-lg text-zinc-400 leading-relaxed">
+                Koopay packages audited smart contracts, instant payouts, and transparent reporting without
+                the crypto overwhelm. Spin up escrow accounts, automate releases, and keep every stakeholder
+                informed.
               </p>
-              <div className="space-y-4 text-slate-200/90">
+              <div className="space-y-4 text-zinc-300">
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 size-3 rounded-full bg-emerald-400"></div>
+                  <div className="mt-1 size-2 rounded-full bg-blue-500" />
                   <div>
-                    <h4 className="font-semibold text-slate-100">For Freelancers</h4>
-                    <p className="text-sm text-slate-300">Guaranteed funds, real-time payout notifications, and a reputation graph you own.</p>
+                    <h4 className="font-semibold text-zinc-100">For Freelancers</h4>
+                    <p className="text-sm text-zinc-400">
+                      Guaranteed funds, payout alerts, and reputation that travels with every win.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 size-3 rounded-full bg-sky-400"></div>
+                  <div className="mt-1 size-2 rounded-full bg-purple-500" />
                   <div>
-                    <h4 className="font-semibold text-slate-100">For Clients</h4>
-                    <p className="text-sm text-slate-300">Milestones stay on schedule with escrow-backed accountability and dispute resolution baked in.</p>
+                    <h4 className="font-semibold text-zinc-100">For Clients</h4>
+                    <p className="text-sm text-zinc-400">
+                      Milestones stay accountable with escrow-backed approvals and dispute automation.
+                    </p>
                   </div>
                 </div>
               </div>
-              <Button className="bg-gradient-to-r from-indigo-500 via-violet-500 to-blue-500 hover:from-indigo-400 hover:via-violet-400 hover:to-blue-400 text-white rounded-full px-8 py-3 font-semibold shadow-xl shadow-indigo-500/30">
+              <Button className={primaryButtonClasses}>
                 Get Early Access
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
 
-            <div className="relative">
-              <div className="rounded-3xl border border-indigo-400/30 bg-gradient-to-br from-indigo-500/20 via-[#111237]/95 to-violet-500/20 p-8 shadow-xl shadow-black/30">
-                <div className="text-center space-y-6">
-                  <div className="w-24 h-24 mx-auto bg-white/10 rounded-full flex items-center justify-center">
-                    <Shield className="w-10 h-10 text-indigo-200" />
+            <div className="rounded-3xl border border-blue-900/40 bg-gradient-to-br from-[#14142a] via-[#101024] to-[#12122b] p-8 shadow-lg shadow-indigo-900/40">
+              <div className="text-center space-y-6">
+                <div className="w-24 h-24 mx-auto bg-[#181826] rounded-full flex items-center justify-center border border-indigo-900/30">
+                  <Shield className="w-10 h-10 text-blue-400" />
+                </div>
+                <h4 className="text-xl font-semibold text-zinc-100">Audit-Ready Infrastructure</h4>
+                <p className="text-zinc-400">
+                  Every contract ships with logs, permissions, and risk controls aligned to fintech standards.
+                </p>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="rounded-2xl border border-indigo-900/40 bg-[#181826] p-4">
+                    <div className="text-2xl font-bold text-blue-400">99.9%</div>
+                    <div className="text-xs text-zinc-500">Uptime</div>
                   </div>
-                  <h4 className="text-xl font-semibold text-slate-100">Blockchain-Secured</h4>
-                  <p className="text-slate-300">Every release is governed by auditable smart contracts with full activity logs.</p>
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                      <div className="text-2xl font-bold text-indigo-200">99.9%</div>
-                      <div className="text-xs text-slate-400">Uptime</div>
-                    </div>
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                      <div className="text-2xl font-bold text-violet-200">3%</div>
-                      <div className="text-xs text-slate-400">Flat fee</div>
-                    </div>
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                      <div className="text-2xl font-bold text-sky-200">24h</div>
-                      <div className="text-xs text-slate-400">Payout</div>
-                    </div>
+                  <div className="rounded-2xl border border-indigo-900/40 bg-[#181826] p-4">
+                    <div className="text-2xl font-bold text-indigo-300">3%</div>
+                    <div className="text-xs text-zinc-500">Flat Fee</div>
+                  </div>
+                  <div className="rounded-2xl border border-indigo-900/40 bg-[#181826] p-4">
+                    <div className="text-2xl font-bold text-purple-300">24h</div>
+                    <div className="text-xs text-zinc-500">Payout</div>
                   </div>
                 </div>
               </div>

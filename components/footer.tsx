@@ -37,18 +37,18 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[#05051a] border-t border-white/5 text-slate-200" id="contact">
+    <footer className="bg-[#090917] border-t border-indigo-900/30 text-zinc-300" id="contact">
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-6 gap-10">
           <div className="md:col-span-2">
             <div className="mb-6">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 bg-gradient-to-br from-indigo-500 via-blue-600 to-violet-500 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30">
-                  <span className="text-white font-bold">K</span>
+                <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-md shadow-indigo-900/40">
+                  <span className="text-white font-semibold">K</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white">Koopay</h3>
+                <h3 className="text-2xl font-semibold text-zinc-100">Koopay</h3>
               </div>
-              <p className="text-slate-400 leading-relaxed">
+              <p className="text-zinc-500 leading-relaxed">
                 Smart escrow, instant payouts, and portable reputation for the independent economy.
               </p>
             </div>
@@ -59,7 +59,7 @@ export function Footer() {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="size-10 rounded-full border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:border-white/40 transition-all duration-200 flex items-center justify-center"
+                  className="size-10 rounded-full border border-indigo-900/40 bg-[#101024] text-zinc-300 hover:text-white hover:border-indigo-500/50 transition-all duration-200 flex items-center justify-center"
                 >
                   {social.icon}
                 </a>
@@ -68,13 +68,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Product</h4>
-            <ul className="space-y-3 text-slate-400">
+            <h4 className="font-semibold text-zinc-100 mb-4">Product</h4>
+            <ul className="space-y-3 text-zinc-500">
               {footerLinks.product.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="hover:text-white transition-colors duration-200"
+                    className="hover:text-zinc-200 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -84,13 +84,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
-            <ul className="space-y-3 text-slate-400">
+            <h4 className="font-semibold text-zinc-100 mb-4">Company</h4>
+            <ul className="space-y-3 text-zinc-500">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="hover:text-white transition-colors duration-200"
+                    className="hover:text-zinc-200 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -100,13 +100,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Resources</h4>
-            <ul className="space-y-3 text-slate-400">
+            <h4 className="font-semibold text-zinc-100 mb-4">Resources</h4>
+            <ul className="space-y-3 text-zinc-500">
               {footerLinks.resources.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="hover:text-white transition-colors duration-200"
+                    className="hover:text-zinc-200 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -116,13 +116,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Legal</h4>
-            <ul className="space-y-3 text-slate-400">
+            <h4 className="font-semibold text-zinc-100 mb-4">Legal</h4>
+            <ul className="space-y-3 text-zinc-500">
               {footerLinks.legal.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="hover:text-white transition-colors duration-200"
+                    className="hover:text-zinc-200 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -132,34 +132,32 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8">
+        <div className="border-t border-indigo-900/30 mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h4 className="font-semibold text-white mb-2">Stay Updated</h4>
-              <p className="text-slate-400">
-                Monthly product drops and ecosystem insights. No spam.
-              </p>
+              <h4 className="font-semibold text-zinc-100 mb-2">Stay Updated</h4>
+              <p className="text-zinc-500">Release notes and exclusive previews. No spam.</p>
             </div>
             <div className="flex w-full md:w-auto max-w-md">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-l-xl text-slate-100 placeholder-slate-400 focus:outline-none focus:border-indigo-400"
+                className="flex-1 px-4 py-3 bg-[#101024] border border-indigo-900/40 rounded-l-xl text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-blue-500"
               />
-              <button className="px-6 py-3 bg-gradient-to-r from-indigo-500 via-violet-500 to-blue-500 hover:from-indigo-400 hover:via-violet-400 hover:to-blue-400 text-white font-semibold rounded-r-xl transition-colors duration-200">
+              <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:brightness-110 text-white font-semibold text-xs uppercase tracking-wide rounded-r-xl transition-colors duration-200">
                 Subscribe
               </button>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 gap-4">
+        <div className="border-t border-indigo-900/30 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-zinc-500 gap-4">
           <p>© {new Date().getFullYear()} Koopay. All rights reserved.</p>
           <div className="flex items-center gap-3">
-            <span>Built with care for the freelance community</span>
+            <span>Built for the independent workforce</span>
             <div className="flex items-center gap-2 text-emerald-400">
               <div className="size-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-slate-400">All systems operational</span>
+              <span className="text-zinc-500">All systems operational</span>
             </div>
           </div>
         </div>
