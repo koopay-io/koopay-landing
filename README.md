@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Koopay: The Future of Freelancing
 
-## Getting Started
+**Koopay is a blockchain-powered freelancing platform that makes freelancing more secure, transparent, and fair.**
 
-First, run the development server:
+On today’s freelancing platforms, freelancers and clients must depend on trust — hoping milestones get delivered, disputes are fairly resolved, and payments actually arrive. Fees are high, payouts are slow, and reputation is locked inside a single platform.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Koopay changes that.** By combining **milestone-based project management**, **automatic escrow in USDC**, and **on-chain reputation**, Koopay guarantees protection for both freelancers and clients. With invisible Web3 onboarding, even non-crypto users can benefit from blockchain security without ever touching private keys.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌍 Vision
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Koopay exists to eliminate the trust problem in freelancing.
+If we succeed, freelancing will become:
 
-## Learn More
+* **Secure** – every milestone is protected by smart contracts.
+* **Fast** – payouts in stablecoins arrive instantly, globally.
+* **Fair** – reputation is portable, not locked in one platform.
+* **Self-sustaining** – powered by fees, yield, and eventually community governance.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 Market Opportunity
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Freelancing is one of the fastest-growing work models, with **hundreds of millions of freelancers worldwide** and billions flowing through platforms like Upwork and Fiverr. These platforms charge high fees (10–20%) and offer slow, opaque processes. Koopay’s opportunity is to capture this market with:
 
-## Deploy on Vercel
+* **Lower fees**
+* **Faster payouts**
+* **Trustless escrow**
+* **Portable, on-chain reputation**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👩‍💻 User Journey
+
+1. A freelancer signs up — Koopay auto-generates their wallet.
+2. They accept a project and define milestones.
+3. The client deposits funds into Koopay’s escrow (in USDC).
+4. Once a milestone is approved, funds are released instantly.
+5. The freelancer’s **on-chain reputation** grows with every success.
+
+---
+
+## ⚔️ Competitive Advantage
+
+* **Versus Upwork/Fiverr**: Koopay offers lower fees, faster payments, guaranteed escrow, and portable reputation.
+* **Versus Web3-native platforms**: Koopay is built for **invisible onboarding**, fiat ramps, and a smooth UX — no crypto knowledge required.
+
+---
+
+## 🚀 Early Plans & Traction
+
+Koopay will launch by connecting freelancers and clients at **events, conferences, and Web3 communities**, creating early adoption momentum before scaling to the broader market.
+
+---
+
+## 🛡️ Risk Mitigation & Roadmap
+
+* **Phase 1**: Admin-managed disputes, locked milestones.
+* **Phase 2**: Community-driven dispute resolution (DAO / Kleros).
+* **Phase 3**: Full decentralization with Koopay token and governance.
+
+---
+
+## 🔗 Token & Economics
+
+* **Stage 1**: Tokens used exclusively for reputation tracking.
+* **Stage 2**: Expanded utility in staking for dispute resolution, fee discounts, and governance.
+* **Revenue Model**: Escrow fees + yield on idle escrow funds.
+
+---
+
+👉 **Koopay is building the trustless backbone of the future of work.**
+
+---
