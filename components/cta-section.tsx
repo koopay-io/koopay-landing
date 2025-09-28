@@ -27,7 +27,7 @@ export function CTASection() {
           <div className="flex items-center justify-center mb-6 text-zinc-100">
             <Bell className="w-7 h-7 text-blue-400 mr-3" />
             <span className="font-semibold uppercase tracking-wide text-xs text-zinc-300">
-              Early Access Live Now
+              Beta Launch Coming Soon
             </span>
           </div>
 
@@ -47,7 +47,7 @@ export function CTASection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className={primaryButtonClasses}>
-              Get Early Access
+              Request Beta Invite
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="outline" size="lg" className={secondaryButtonClasses}>
@@ -58,16 +58,16 @@ export function CTASection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="rounded-2xl border border-indigo-900/40 bg-[#12122b] p-6 shadow-lg shadow-indigo-900/40">
-            <div className="text-2xl font-semibold text-zinc-100 mb-2">10,000+</div>
-            <div className="text-sm text-zinc-500 uppercase tracking-wide">On the waitlist</div>
+            <div className="text-sm font-semibold text-blue-300 uppercase tracking-wide mb-2">Waitlist</div>
+            <div className="text-zinc-400 text-sm">Public waitlist opens after private beta validation.</div>
           </div>
           <div className="rounded-2xl border border-indigo-900/40 bg-[#12122b] p-6 shadow-lg shadow-indigo-900/40">
-            <div className="text-2xl font-semibold text-zinc-100 mb-2">50+</div>
-            <div className="text-sm text-zinc-500 uppercase tracking-wide">Beta testers</div>
+            <div className="text-sm font-semibold text-blue-300 uppercase tracking-wide mb-2">Beta</div>
+            <div className="text-zinc-400 text-sm">We&apos;re onboarding a small group of freelancers and clients now.</div>
           </div>
           <div className="rounded-2xl border border-indigo-900/40 bg-[#12122b] p-6 shadow-lg shadow-indigo-900/40">
-            <div className="text-2xl font-semibold text-zinc-100 mb-2">99.9%</div>
-            <div className="text-sm text-zinc-500 uppercase tracking-wide">Success rate</div>
+            <div className="text-sm font-semibold text-blue-300 uppercase tracking-wide mb-2">Roadmap</div>
+            <div className="text-zinc-400 text-sm">Status updates land in your inbox once milestones clear.</div>
           </div>
         </div>
 

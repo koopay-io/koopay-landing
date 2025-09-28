@@ -44,25 +44,25 @@ export function HeroSection() {
         </div>
 
         <div className="relative max-w-3xl mx-auto">
-          <div className="bg-[#12122b] rounded-3xl shadow-xl shadow-indigo-900/50 border border-indigo-900/40 p-8 backdrop-blur">
-            <div className="aspect-video rounded-2xl bg-gradient-to-br from-[#181826] via-[#141428] to-[#12122b] flex items-center justify-center border border-indigo-900/30">
-              <div className="text-center px-4">
-                <div className="w-16 h-16 mx-auto mb-5 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg shadow-indigo-900/40">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold text-zinc-100 mb-2">
-                  Secure • Instant • Transparent
-                </h3>
-                <p className="text-zinc-400">Dashboard preview ships with our beta launch.</p>
+          <div className="bg-[#12122b] rounded-3xl shadow-xl shadow-indigo-900/50 border border-indigo-900/40 p-4 sm:p-6 md:p-8 backdrop-blur">
+            <div className="relative aspect-video overflow-hidden rounded-2xl border border-indigo-900/30 bg-[#0f0f22]">
+              <video
+                className="h-full w-full object-cover"
+                src="/video/pitch-demo.mp4"
+                preload="metadata"
+                controls
+                playsInline
+                poster="/video/pitch-demo-thumbnail.svg"
+              >
+                Your browser does not support the Koopay product demo video.
+              </video>
+              <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-[#0b0b1a]/80 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-200 backdrop-blur">
+                Live product demo
               </div>
             </div>
+            <p className="mt-4 text-sm text-zinc-500 text-center">
+              Watch the Koopay walkthrough recorded from our latest internal beta build.
+            </p>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
@@ -43,8 +44,14 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="mb-6">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-md shadow-indigo-900/40">
-                  <span className="text-white font-semibold">K</span>
+                <div className="relative h-9 w-9">
+                  <Image
+                    src="/vector-logo.png"
+                    alt="Koopay logo"
+                    fill
+                    className="object-contain drop-shadow-lg"
+                    sizes="36px"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold text-zinc-100">Koopay</h3>
               </div>
